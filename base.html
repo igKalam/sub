@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>VideoView</title>
+    <meta charset="utf-8" />
+    <script src="Scripts/jquery-3.6.0.js"></script>
+    <title> Video Viewer </title>
+    <style>
+        #subsc-content {
+            display: flex;
+        }
+
+        .yt-uix-button-subscribe-branded {
+            background-color: green !important;
+        }
+    </style>
+
 </head>
-<body style="text-align:center;">
-    <script src="https://apis.google.com/js/platform.js"></script>
-    <p> click her to conitinue</p>
-    <div>
+<body onload ="changestyle()">
+    <div id="subsc-content">
         <p>get link</p>
         <div class="g-ytsubscribe" data-channelid="UCg8J4CQKjyztJyHw-Bd6Q6w" data-layout="default" data-theme="dark" data-count="hidden"></div>
     </div>
-    
+    <script>
+        function changestyle() {
+            kids = $('.yt-uix-button-content').children();
+        }
+    </script>
 </body>
-
 </html>
